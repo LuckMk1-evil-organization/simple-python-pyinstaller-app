@@ -14,3 +14,8 @@ jobs:
       - name: Test
         id: Test
         uses: LuckMk1-evil-organization/simple-python-pyinstaller-app/actions/test@master
+      - name: Pytest coverage comment
+        uses: MishaKav/pytest-coverage-comment@main
+        with:
+          pytest-coverage-path: /test-reports/results.txt
+          junitxml-path: ./pytest.xml
