@@ -10,4 +10,4 @@ jobs:
         uses: actions/checkout@v3
       - name: build
         id: build
-        uses: LuckMk1-evil-organization/simple-python-pyinstaller-app@1656ce33ca69daf405f64b00b8f9c5880b264b29
+        uses: LuckMk1-evil-organization/simple-python-pyinstaller-app@8ec0b88f459922af578a4ac8539ec010a20500a7
