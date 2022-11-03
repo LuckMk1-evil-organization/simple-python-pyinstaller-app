@@ -1,0 +1,13 @@
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: on tente des trucs
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: build
+        id: build
+        uses: simple-python-pyinstaller-app/build.yml@latest
