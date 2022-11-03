@@ -5,4 +5,4 @@ ENV IMAGE = 'cdrx/pyinstaller-linux:python2'
 
 WORKDIR /
 
-CMD ["docker", "run", "--rm", "-v", "${VOLUME}", "${IMAGE}", "'pyinstaller -F add2vals.py'"]
+RUN docker run --rm -v ${VOLUME} ${IMAGE} 'pyinstaller -F add2vals.py'
