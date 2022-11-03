@@ -14,8 +14,16 @@ jobs:
       - name: Test
         id: Test
         uses: LuckMk1-evil-organization/simple-python-pyinstaller-app/actions/test@master
+      - name: Save code coverage results
+        uses: actions/upload-artifact@v3
+        with:
+          name: code-coverage-report
+          path: /results.xml
       - name: Pytest coverage comment
         uses: MishaKav/pytest-coverage-comment@main
         with:
           pytest-coverage-path: /results.xml
           junitxml-path: /pytest.xml
+      - name: Deliver
+        id: deliver
+        uses: LuckMk1-evil-organization/simple-python-pyinstaller-app/actions/deliver@master
