@@ -2,3 +2,7 @@ name: 'Build file'
 runs:
   using: 'docker'
   image: 'Dockerfile'
+name: 'Test build'
+runs:
+  using: 'docker'
+  image: 'DockerTest'
