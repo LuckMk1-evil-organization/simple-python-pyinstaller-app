@@ -5,4 +5,4 @@ ENV IMAGE = 'cdrx/pyinstaller-linux:python2'
 
 WORKDIR /
 
-RUN pyinstaller -F /src/add2vals.py
+CMD ["pyinstaller", "-F", "/src/add2vals.py"]
