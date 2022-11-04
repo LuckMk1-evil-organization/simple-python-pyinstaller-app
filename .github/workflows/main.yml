@@ -21,11 +21,11 @@ jobs:
         with:
           name: code-coverage-report
           path: ${{ github.workspace }}/sources/results.xml
-      - name: Pytest coverage comment
-        uses: MishaKav/pytest-coverage-comment@main
-        with:
-          pytest-coverage-path: ${{ github.workspace }}/pytest-coverage.txt
-          junitxml-path: ${{ github.workspace }}/sources/results.xml
+#      - name: Pytest coverage comment
+#        uses: MishaKav/pytest-coverage-comment@main
+#        with:
+#          pytest-coverage-path: ${{ github.workspace }}/pytest-coverage.txt
+#          junitxml-path: ${{ github.workspace }}/sources/results.xml
       - name: Deliver
         id: deliver
         uses: LuckMk1-evil-organization/simple-python-pyinstaller-app/actions/deliver@master
