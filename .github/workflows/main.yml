@@ -15,7 +15,7 @@ jobs:
         uses: LuckMk1-evil-organization/simple-python-pyinstaller-app/actions/build@master
       - name: Test
         id: Test
-        uses: LuckMk1-evil-organization/simple-python-pyinstaller-app/actions/test@master >> $GITHUB_OUTPUT
+        uses: LuckMk1-evil-organization/simple-python-pyinstaller-app/actions/test@master
       - name: Save code coverage results
         uses: actions/upload-artifact@v3
         with:
