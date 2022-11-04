@@ -1,8 +1,5 @@
-FROM cdrx/pyinstaller-linux:python2
+FROM cdrx/pyinstaller-linux:python3
 
-ENV VOLUME = '$(pwd)/sources:/src'
-ENV IMAGE = 'cdrx/pyinstaller-linux:python2'
+WORKDIR '$(pwd)/sources'
 
-WORKDIR /
-
-CMD ["pyinstaller", "-F", "/src/add2vals.py"]
+CMD ["pyinstaller", "-F", "add2vals.py"]
