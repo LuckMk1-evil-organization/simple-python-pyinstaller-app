@@ -4,4 +4,4 @@ runs:
   image: 'Dockerfile'
  outputs:
   result:
-    description: "résultats en .xml"
+    description: 'resultats en .xml'
