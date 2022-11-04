@@ -20,7 +20,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: code-coverage-report
-          path: /results.xml
+          path: ${{ github.workspace }}/sources/results.xml
       - name: Pytest coverage comment
         uses: MishaKav/pytest-coverage-comment@main
         with:
