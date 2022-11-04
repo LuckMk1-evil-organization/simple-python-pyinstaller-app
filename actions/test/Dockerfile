@@ -2,4 +2,4 @@ FROM qnib/pytest
 
 WORKDIR /
 
-RUN py.test --junit-xml=sources/results.xml --cov-report=term-missing:skip-covered --cov=app sources/test_calc.py | tee pytest-coverage.txt
+CMD ["py.test", "--junit-xml", "sources/results.xml", "sources/test_calc.py"] >> $GITHUB_OUTPUT
