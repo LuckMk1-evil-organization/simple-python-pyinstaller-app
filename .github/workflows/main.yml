@@ -33,4 +33,4 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: add2vals
-          path: ${{ github.workspace }}/sources/add2vals
+          path: ${{ github.workspace }}
