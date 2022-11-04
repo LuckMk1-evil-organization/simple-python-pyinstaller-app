@@ -2,3 +2,6 @@ name: 'Test build'
 runs:
   using: 'docker'
   image: 'Dockerfile'
+ outputs:
+  result:
+    description: "résultats en .xml"
