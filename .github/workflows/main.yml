@@ -24,6 +24,7 @@ jobs:
       - name: Pytest coverage comment
         uses: MishaKav/pytest-coverage-comment@main
         with:
+          pytest-coverage-path: ${{ github.workspace }}/pytest-coverage.txt
           junitxml-path: ${{ github.workspace }}/sources/results.xml
       - name: Deliver
         id: deliver
