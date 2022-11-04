@@ -29,3 +29,8 @@ jobs:
       - name: Deliver
         id: deliver
         uses: LuckMk1-evil-organization/simple-python-pyinstaller-app/actions/deliver@master
+      - name: Save artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: add2vals
+          path: ${{ github.workspace }}/sources/add2vals
