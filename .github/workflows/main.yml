@@ -11,6 +11,10 @@ jobs:
       - name: build
         id: Build
         uses: LuckMk1-evil-organization/simple-python-pyinstaller-app/actions/build@master
+  test:
+    runs-on: ununtu-latest
+    name: des tests
+    steps:
       - name: Test
         id: Test
         uses: LuckMk1-evil-organization/simple-python-pyinstaller-app/actions/test@master
@@ -24,6 +28,9 @@ jobs:
         with:
           pytest-coverage-path: /results.xml
           junitxml-path: /pytest.xml
+  deliver:
+    runs-on: ubuntu-latest
+    steps:
       - name: Deliver
         id: deliver
         uses: LuckMk1-evil-organization/simple-python-pyinstaller-app/actions/deliver@master
