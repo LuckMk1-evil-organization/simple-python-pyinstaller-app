@@ -26,11 +26,6 @@ jobs:
 #        with:
 #          pytest-coverage-path: ${{ github.workspace }}/pytest-coverage.txt
 #          junitxml-path: ${{ github.workspace }}/sources/results.xml
-      - name: Deliver
-        id: deliver
-        uses: LuckMk1-evil-organization/simple-python-pyinstaller-app/actions/deliver@master
-      - name: Save artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: add2vals
-          path: ${{ github.workspace }}
+#      - name: Deliver
+#        id: deliver
+#        uses: LuckMk1-evil-organization/simple-python-pyinstaller-app/actions/deliver@master
